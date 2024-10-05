@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>🖋️ To Do List 📄</title>
+    <script
+      src="https://kit.fontawesome.com/398b601215.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="loader" class="loader" style="display: none"></div>
+
+    <main id="main">
+      <h1>🖋️ To Do List 📄</h1>
+      <div class="container">
+        <div class="form">
+          <input type="text" id="newItem" placeholder="Enter new task" />
+          <button onclick="addItem()" class="add">Add</button>
+          <button onclick="DeleteAll()" class="deleteAll">Delete All</button>
+        </div>
+        <div id="tasks"></div>
+      </div>
+    </main>
+    <div id="toastBox"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
